@@ -1,0 +1,127 @@
+.cover__main {
+  display: flex;
+  gap: 30px;
+}
+
+.cover__body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cover__description {
+  max-width: 430px;
+}
+
+.cover__button {
+  align-self: flex-start;
+}
+
+.cover__title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.cover__image {
+  object-fit: cover;
+}
+
+.cover__features-inner {
+  padding: 14px 54px;
+  background-color: var(--color-gray-alt);
+  border-radius: var(--border-radius);
+}
+
+.cover__features-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 926px;
+  margin-inline: auto;
+  gap: 42px;
+}
+.cover__features-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 19px 28px;
+  min-height: 200px;
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.cover__features-info {
+  font-size: 18px;
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+@media (max-width: 1280px) {
+  .cover__features-list {
+    gap: 20px;
+  }
+
+  .cover__features-inner {
+    padding: 14px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover__main {
+    flex-direction: column;
+    margin-bottom: var(--section-padding-y);
+  }
+  .cover__body {
+    display: contents;
+    text-align: center;
+  }
+  .cover__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cover__title {
+    order: -2;
+  }
+
+  .cover__description {
+    max-width: 100%;
+  }
+
+  .cover__image {
+    order: -1;
+  }
+
+  .cover__button {
+    align-self: auto;
+  }
+
+  .cover__features-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px;
+  }
+
+  .cover__features-item {
+    padding: 30px 19px 28px;
+    min-height: 180px;
+  }
+}
+@media (min-width: 769px) {
+  .cover__image {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .cover__features-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 42px;
+  }
+
+  .cover__features-item {
+    min-height: 160px;
+  }
+}

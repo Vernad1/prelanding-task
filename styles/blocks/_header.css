@@ -1,0 +1,27 @@
+.header {
+  padding-top: 33px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 68px;
+}
+
+.header__menu-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  transition-duration: var(--transition-duration);
+}
+
+.header__menu-link:hover {
+  cursor: pointer;
+  color: var(--color-accent);
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Prelanding-task</title>
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+            class="logo__image"
+            width="43"
+            height="43"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Services</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">About us</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__button button hidden-mobile" type="button">
+          Sign up
+        </button>
+
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          onclick="mobileOverlay.showModal()"
+        ></button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section container">
+        <div class="cover">
+          <div class="cover__main">
+            <div class="cover__body">
+              <h1 class="cover__title">
+                <span class="accent-color">Explore</span> the fascinating world
+                of VR
+              </h1>
+              <div class="cover__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                cursus ac ipsum sed rhoncus. Nam euismod auctor ipsum. Etiam
+                interdum nulla neque, eu elementum arcu fermentum vel.
+              </div>
+
+              <button class="cover__button button button--large">
+                Click here
+              </button>
+            </div>
+            <img
+              src="./images/cover-image.png"
+              width="716"
+              height="597"
+              loading="lazy"
+              alt="cover image"
+              class="cover__image"
+            />
+          </div>
+          <div class="cover__features">
+            <div class="cover__features-inner">
+              <ul class="cover__features-list">
+                <li class="cover__features-item">
+                  <img
+                    src="./images/features-icon/features-1.svg"
+                    height="40px"
+                    width="40px"
+                    class="cover__features-logo"
+                  />
+                  <div class="cover__features-info">
+                    Experience the world through VR glasses
+                  </div>
+                </li>
+                <li class="cover__features-item">
+                  <img
+                    src="./images/features-icon/features-2.svg"
+                    height="40px"
+                    width="40px"
+                    class="cover__features-logo"
+                  />
+                  <div class="cover__features-info">
+                    View all your surrounding with 360
+                  </div>
+                </li>
+
+                <li class="cover__features-item">
+                  <img
+                    src="./images/features-icon/features-3.svg"
+                    height="40px"
+                    width="40px"
+                    class="cover__features-logo"
+                  />
+                  <div class="cover__features-info">
+                    Incredible gaming experience
+                  </div>
+                </li>
+
+                <li class="cover__features-item">
+                  <img
+                    src="./images/features-icon/features-4.svg"
+                    height="40px"
+                    width="40px"
+                    class="cover__features-logo"
+                  />
+                  <div class="cover__features-info">
+                    Making meetings and tours easier
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button
+          class="mobile-overlay__close-button cross-button"
+          type="submit"
+        ></button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a href="/" class="menu-overlay__link">Home</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="menu-overlay__link">Services</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="menu-overlay__link">About us</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="menu-overlay__link">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>

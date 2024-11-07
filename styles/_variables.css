@@ -1,0 +1,27 @@
+:root {
+  --color-dark: #000000;
+  --color-white: #fff;
+  --color-accent: #9ba4ed;
+  --color-gray: #202020;
+  --color-gray-alt: #101010;
+
+  --border: 1px solid var(--color-white);
+  --border-radius: 20px;
+  --border-radius-small: 6px;
+
+  --font-family-base: sans-serif;
+
+  --button-height: 32px;
+  --button-height-large: 65px;
+
+  --transition-duration: 0.2s;
+
+  --container-width: 1280px;
+  --container-padding-x: 20px;
+
+  --section-padding-y: 70px;
+
+  @media (max-width: 768px) {
+    --section-padding-y: 30px;
+  }
+}
